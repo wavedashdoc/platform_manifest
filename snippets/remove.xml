@@ -141,5 +141,13 @@
   <remove-project name="platform/system/nfc" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/vold" />
+  
+  <remove-project path="system/libhidl" />
+  <remove-project path="system/tools/hidl" />
+  <remove-project path="system/libhwbinder" />
+  <remove-project path="system/hwservicemanager" />
+  <remove-project path="external/libhevc" />
+  <remove-project path="external/sqlite" />
+  <remove-project path="external/libavc" />
 
 </manifest>
