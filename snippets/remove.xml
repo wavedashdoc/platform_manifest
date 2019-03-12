@@ -142,12 +142,12 @@
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/vold" />
 
-  <remove-project path="platform/system/libhidl" />
-  <remove-project path="platform/system/tools/hidl" />
-  <remove-project path="platform/system/libhwbinder" />
-  <remove-project path="platform/system/hwservicemanager" />
-  <remove-project path="platform/external/libhevc" />
-  <remove-project path="platform/external/sqlite" />
-  <remove-project path="platform/external/libavc" />
+  <remove-project name="platform/system/libhidl" />
+  <remove-project name="platform/system/tools/hidl" />
+  <remove-project name="platform/system/libhwbinder" />
+  <remove-project name="platform/system/hwservicemanager" />
+  <remove-project name="platform/external/libhevc" />
+  <remove-project name="platform/external/sqlite" />
+  <remove-project name="platform/external/libavc" />
 
 </manifest>
