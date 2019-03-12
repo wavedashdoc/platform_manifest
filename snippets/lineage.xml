@@ -17,9 +17,9 @@
   <project path="system/tools/hidl" name="platform_system_tools_hidl" remote="los" />
   <project path="system/libhwbinder" name="platform_system_libhwbinder" remote="los" />
   <project path="system/hwservicemanager" name="platform_system_hwservicemanager" remote="los" />
-  <project path="external/libhevc" name="platform/external/libhevc" groups="los" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="los" />
-  <project path="external/libavc" name="platform/external/libavc" groups="los" />
+  <project path="external/libhevc" name="platform_external_libhevc" remote="los" />
+  <project path="external/sqlite" name="platform_external_sqlite" remote="los" />
+  <project path="external/libavc" name="platform_external_libavc" remote="los" />
 
 
 </manifest>
