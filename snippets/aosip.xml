@@ -69,13 +69,12 @@
   <project path="system/bt" name="platform_system_bt" remote="wavedashdoc" />
   <project path="system/core" name="platform_system_core" remote="aosip" />
   <project path="system/extras" name="platform_system_extras" remote="aosip" />
-  <project path="system/hwservicemanager" name="platform_system_hwservicemanager" remote="aosip" />
-  <project path="system/libhidl" name="platform_system_libhidl" remote="aosip" />
   <project path="system/netd" name="platform_system_netd" remote="aosip" />
   <project path="system/nfc" name="android_platform_system_nfc" remote="wavedashdoc" />
   <project path="system/qcom" name="platform_system_qcom" remote="aosip" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="aosip" />
   <project path="system/vold" name="platform_system_vold" remote="aosip" />
+  <project path="system/frameworks/native" name="platform_system_libhwbinder" remote="wavedashdoc" />
 
   <project path="vendor/aosip" name="platform_vendor_aosip" remote="wavedashdoc" />
   <project path="vendor/moto" name="proprietary_vendor_motorola" remote="wavedashdoc" />
