@@ -74,6 +74,7 @@
   <project path="system/qcom" name="platform_system_qcom" remote="aosip" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="aosip" />
   <project path="system/vold" name="platform_system_vold" remote="aosip" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="wavedashdoc" />
 
   <project path="vendor/aosip" name="platform_vendor_aosip" remote="wavedashdoc" />
   <project path="vendor/moto" name="proprietary_vendor_motorola" remote="wavedashdoc" />

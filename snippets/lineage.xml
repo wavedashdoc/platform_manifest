@@ -16,7 +16,6 @@
 
   <project path="system/libhidl" name="android_system_libhidl" remote="los" />
   <project path="system/tools/hidl" name="android_system_tools_hidl" remote="los" />
-  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="los" />
   <project path="system/hwservicemanager" name="android_system_hwservicemanager" remote="los" />
   <project path="external/libhevc" name="android_external_libhevc" remote="los" />
   <project path="external/sqlite" name="android_external_sqlite" remote="los" />
