@@ -1,25 +1,13 @@
 Unoffical Shamu AOSiP 8.1 (Draft README)
 ===========
 
-Getting Started building Android on Windows 10 with WSL and or Linux (Linux Portion Incomplete)
----------------
-
-Note: WSL is the proprietary Microsoft linux subsystem that is available on Windows 10.
+Getting Started building Android on Windows 10 with WSL
 ---------------
 
 To get started with building Android, please review common building comands
 [Git and Repo](http://source.android.com/source/using-repo.html).
 ---------------
 
-Setuping up your Build Environment:
----------------
-
-A. Windows 10 WSL
-
-B. Linux (Mint)
----------------
-
-A. Windows 10 WSL
 
 Requirements:
 
@@ -27,10 +15,19 @@ Requirements:
 * 16GB RAM or more
 * Modern CPU (i5, i7)
 * Modern GPU (GTX 670+)
+---------------
+
+
+Setup up your Build Environment:
+
 
 1. Install and Enable: [Windows Subsystem Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and choose a distro app (Ubuntu recommended)
 
-2. Once Ubuntu is installed, within the same Ubuntu Terminal, enter the following command:
+2. Once Ubuntu is installed, within the same Ubuntu Terminal, enter the following commands:
+
+```bash
+sudo apt update -y
+```
 
 ```bash
 sudo apt install git android-sdk-platform-tools bc build-essential ccache curl g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush repo rsync schedtool squashfs-tools xsltproc zip zlib1g-de openjdk-8-jdk
@@ -38,7 +35,7 @@ sudo apt install git android-sdk-platform-tools bc build-essential ccache curl g
 
 3. Next, go to [51-android.rules](https://raw.githubusercontent.com/M0Rf30/android-udev-rules/master/51-android.rules) and copy this entire page and save it as 51-android.rules to your desktop.
 
-In the terminal: Changes the directory to the required folder:
+In the terminal: Change the directory to the required folder with this command:
 
 ```bash
 cd ~/etc/udev/rules.d
@@ -49,25 +46,26 @@ Then:
 ```bash
 cp /mnt/c/Users/USERNAME/Desktop/51-android.rules ~/etc/udev/51-android.rules
 ```
+---------------
+
 
 4. Setup and Initialize your local repository of this ROM. 
----------------
 
 Use the following command:
 
-Note: This makes the directory (Noted this must be done through command line, if created through explorer it will fail)
+Note: Makes the directory: (Noted this must be done through command line, if created through explorer it will fail)
 
 ```bash
 mkdir -p ~/android/AOSiP
 ```
 
-Then: Changes the directory to the ROM folder:
+Then: Change the directory to the ROM folder:
 
 ```bash
 cd ~/android/AOSiP
 ```
 
-Then: Points to where the source is located on Github:
+Then: Point to where the source is located on Github:
 
 ```bash
 repo init -u git://github.com/wavedashdoc/platform_manifest.git -b oreo-mr1-test
@@ -84,8 +82,8 @@ Then....
 4. Wait, this will take a LONG TIME depending on your internet connection. (You'll be downloading around 30+GB)
 
 Example: 100up/100down about 1hour 30min
-
 ---------------
+
 
 5. While waiting for the source to finish syncing, add the following to the very bottom of your .bashrc file located:
 
@@ -95,7 +93,7 @@ C:\Users\"USERNAME"\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows
 
 Note: for "USERNAME" = username for your computer
 
-for "LINUXUSER" = the name you chose for your Linux Distro
+For "LINUXUSER" = the name you chose for your Linux Distro
 
 ```bash
 # ccache
@@ -113,13 +111,12 @@ export PATH=${PATH}:~/bin
 export ANDROID_HOME=~/Android/Sdk
 export LC_ALL=C
 ```
----------------
 
 Prebuilding Bison and Ijar
 
-Note: The Prebuilt Bison and Ijar added because WSL runs 64-bit binaries. The prebuilt bison and ijar binaries are 32-bit. You will need to build them from source in order to avoid the fatal error "cannot execute binary file: Exec format error":
-
+Note: We need to build Bison and Ijar because WSL runs 64-bit binaries, not 32-bit. Building them from source first before the ROM will avoid the fatal build error "cannot execute binary file: Exec format error":
 ---------------
+
 
 Building the ROM
 
@@ -159,11 +156,11 @@ Success!? So... what's next?
 
 You've done it! Welcome to the elite club of self-builders. You've built your operating system from scratch, from the ground up. You are the master/mistress of your domain... and
 hopefully you've learned a bit on the way and had some fun too.
-
 ---------------
 
-Guide based off [LineageOS Building with WSL](https://github.com/LineageOS/lineage_wiki/commit/97094f0ab3cc8a00154eb0878344320efc26e480).
 
-And also: [XDA [GUIDE] How to build LineageOS 16.0 on Windows 10 (via WSL)](https://forum.xda-developers.com/android/software-hacking/guide-how-to-build-lineageos-15-1-t3750175).
+ROM building is based off of [LineageOS Building with WSL](https://github.com/LineageOS/lineage_wiki/commit/97094f0ab3cc8a00154eb0878344320efc26e480).
+
+And also [XDA [GUIDE] How to build LineageOS 16.0 on Windows 10 (via WSL)](https://forum.xda-developers.com/android/software-hacking/guide-how-to-build-lineageos-15-1-t3750175).
 
 And thanks to Camcory for his help this past year. 
