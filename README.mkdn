@@ -1,107 +1,159 @@
-AOSiP
+Unoffical Shamu AOSiP 8.1 (Draft README)
 ===========
 
-Getting Started
+Getting Started building Android on Windows 10 with WSL and or Linux (Incomplete atm)
+
+Note: WSL is the proprietary Microsoft linux subsystem that is available on Windows 10.
 ---------------
 
-To get started with Android, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+To get started with building Android, please review common building comands
+[Git and Repo](http://source.android.com/source/using-repo.html).
+---------------
 
-To initialize your local repository using the AOSiP trees, use a command like this:
+Setuping up your Build Environment:
+
+A. Windows 10 WSL
+B. Linux (Mint)
+---------------
+
+A. Windows 10 WSL
+
+Requirements:
+
+* Windows 10 (64-bit) installed on a drive (256GB or bigger) (SSD recommended)
+* 16GB RAM or more
+* Modern CPU (i5, i7)
+* Modern GPU (GTX 670+)
+
+1. Enable [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and choose a distro app (Ubuntu recommended)
+
+2. Once completed with the Ubuntu install, within the same Ubuntu Terminal, enter the following command:
+
+```bash
+sudo apt install git android-sdk-platform-tools bc build-essential ccache curl g++-multilib gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop pngcrush repo rsync schedtool squashfs-tools xsltproc zip zlib1g-de openjdk-8-jdk
+```
+
+Next, go to [51-android.rules](https://raw.githubusercontent.com/M0Rf30/android-udev-rules/master/51-android.rules) and copy this entire page and save it as 51-android.rules to your desktop.
+
+In the terminal: Changes the directory to the required folder:
+
+```bash
+cd ~/etc/udev/rules.d
+```
+
+Then:
+
+```bash
+cp /mnt/c/Users/USERNAME/Desktop/51-android.rules ~/etc/udev/51-android.rules
+```
+
+3. Setup and Initialize your local repository of this ROM. 
+
+Use the following command:
+
+Note: This makes the directory (Noted this must be done through command line, if created through explorer it will fail)
+
+```bash
+mkdir -p ~/android/AOSiP
+```
+
+Then: Changes the directory to the ROM folder:
+
+```bash
+cd ~/android/AOSiP
+```
+
+Then: Points to where the source is located on Github:
 
 ```bash
 repo init -u git://github.com/wavedashdoc/platform_manifest.git -b oreo-mr1-test
 ```
-Then to sync up:
+
+Then: To start syncing the source:
+
 ```bash
 repo sync -f --force-sync --no-tags --no-clone-bundle
 ```
 
-Building the source
+Then....
+
+4. Wait, this will take a LONG TIME depending on your internet connection. (You'll be download around 30+GB)
+
+Example: 100up/100down about 1hour 30min
+
 ---------------
 
-The source at AOSiP is well configured for building.
+5. While waiting for the source to finish syncing, add the following to the very bottom of your .bashrc file located: 
+C:\Users\"USERNAME"\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\"LINUXUSER"\.bashrc
+
+Note: for "USERNAME" = username for your computer
+for "LINUXUSER" = the name you chose for your Linux Distro
 
 ```bash
-source build/envsetup.sh
-lunch aosip_device-userdebug
+# ccache
+export USE_CCACHE=1
+export CCACHE_DIR=~/.ccache
+ccache -M 100G;
+
+export BISON_EXEC=~/android/AOSiP/out/host/linux-x86/bin/bison
+export IJAR_EXEC=~/android/AOSiP/out/host/linux-x86/bin/ijar
+
+# Android tools
+export PATH=${PATH}:~/Android/Sdk/tools
+export PATH=${PATH}:~/Android/Sdk/platform-tools
+export PATH=${PATH}:~/bin
+export ANDROID_HOME=~/Android/Sdk
+export LC_ALL=C
+```
+---------------
+
+Prebuilding Bison and Ijar
+
+Note: The "export BISON_EXEC=~/android/AOSiP/out/host/linux-x86/bin/bison" and "export IJAR_EXEC=~/android/AOSiP/out/host/linux-x86/bin/ijar" are added because WSL runs 64-bit binaries. The prebuilt bison and ijar binaries are 32-bit. You will need to build them from source in order to avoid the fatal error "cannot execute binary file: Exec format error":
+
+---------------
+
+Building the ROM
+
+6. In the same Ubuntu terminal window:
+
+```bash
+make bison
+``
+
+Then:
+
+```bash
+make ijar
+```
+
+Then: 
+
+```bash
+. build/envsetup.sh
+```
+
+```bash
+lunch 
+```
+
+```bash
+aosip_shamu-userdebug
+```
+
+```bash
 time mka kronic
 ```
 
-## Submitting Patches ##
+7. Profit Hopefully
 
-You can submit your patches to AOSiP just by registering at "https://review.aosiprom.com"
+Success! So... what's next?
 
-Open up terminal to create your ssh keys required for submitting patches to gerrit and type in:
+You've done it! Welcome to the elite club of self-builders. You've built your operating system from scratch, from the ground up. You are the master/mistress of your domain... and
+hopefully you've learned a bit on the way and had some fun too.
 
-```bash
-ssh-keygen
-```
+Guide based off [LineageOS](https://github.com/LineageOS/lineage_wiki/commit/97094f0ab3cc8a00154eb0878344320efc26e480).
 
-In our gerrit click on your "Avatar" on the top right, then on "Settings".
+And also: [xda](https://forum.xda-developers.com/android/software-hacking/guide-how-to-build-lineageos-15-1-t3750175).
 
-While in 'Settings' Click on "SSH Public Keys" on the left hand side and then on "Add Key".
-
-Then copy and paste the contents of ~/.ssh/id_rsa.pub to "Gerrit SSH Public Keys".
-
-You can send patches to us by using these commands in terminal:
-
-cd PROJECT - i.e
-```bash
-cd packages/apps/OwlsNest
-```
-Make edits that you want to see .....
-```bash
-git add .
-git commit -a
-```
-Type out a commit message that makes sense for the proposed change
-
-Ctrl O, then Ctrl X to save and exit
-
-```bash
-git push ssh://USERNAME@review.aosiprom.com:29418/PROJECT HEAD:refs/for/BRANCH
-```
-BRANCH - i.e oreo-mr1
-PROJECT - i.e AOSIP/platform_packages_apps_OwlsNest
-USERNAME - i.e Shreesha
-
-If you're feeling extra lazy, you can submit streamline the process.  First you need to tell git about your gerrit username:
-```bash
-git config --global review.review.aosiprom.com.username <Your username registered at AOSiP gerrit>
-```
-
-Now you can run these commands to push changes to gerrit. Note: the first command only needs run once from each project.
-```bash
-gerrit
-git push gerrit HEAD:refs/for/BRANCH
-```
-
-If you are going to make extra additions, just repeat steps (don't start a new patch), but instead of git commit -m
-use git commit --amend. Gerrit will recognize it as a new patchset.
-
-For more information on how to push to a gerrit, please read the
-following: [Link](https://wiki.mahara.org/wiki/Developer_Area/Contributing_Code)
-
-Also to make this even easier, you can use a universal gerrit script provided by PAC:
-[Link](https://forum.xda-developers.com/showthread.php?t=2530388)
-
-## Maintaining Authorship ##
-Please make sure if you submit a patch/fix from another ROM that you maintain authorship.
-This is very important to not only us but to the entire open source community. It's what keeps it going and encourages more developers to 
-contribute their work.
-
-If you manually cherry pick a patch/fix please add the original author prior to pushing to our gerrit.
-This task is very easy and is usually done after you commit a patch/fix locally.
-
-i.e - Once you type in "git commit -a" the commit message and you have saved it, type in the following:
-
-```bash
-git commit --amend --author "Author <email@address.com>"
-```
-
-So it should look like this once you get all author's information:
-
-```bash
-git commit --amend --author "Shreesha <shreeshu10@gmail.com>"
-```
+And thanks to Camcory for his help this past year. 
