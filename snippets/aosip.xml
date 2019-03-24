@@ -44,7 +44,7 @@
   <project path="hardware/qcom/msm8x84" name="platform_hardware_qcom_msm8x84" remote="wavedashdoc" />
   <project path="hardware/ril" name="platform_hardware_ril" remote="wavedashdoc" />
 
-  <project path="kernel/moto/shamu" name="wavedashdoc/android_kernel_moto_shamu" remote="github" revision="oreo-mr1-test2" />
+  <project path="kernel/moto/shamu" name="wavedashdoc/android_kernel_moto_shamu" remote="wavedashdoc" revision="oreo-mr1-test2" />
 
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_contacts" remote="wavedashdoc" />
