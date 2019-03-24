@@ -68,7 +68,7 @@ cd ~/android/AOSiP
 Then: Point to where the source is located on Github:
 
 ```bash
-repo init -u git://github.com/wavedashdoc/platform_manifest.git -b oreo-WVDD-stable
+repo init -u git://github.com/wavedashdoc/platform_manifest.git -b oreo-mr1-WVDD-stable
 ```
 
 Then: To start syncing the source:
