@@ -20,7 +20,7 @@
   </project>
 
   <project path="device/aosip/sepolicy" name="device_aosip_sepolicy" remote="aosip" />
-   <project path="device/moto/shamu" name="device_moto_shamu" remote="wavedashdoc" revision="orero-mr1-test3" />
+   <project path="device/moto/shamu" name="device_moto_shamu" remote="wavedashdoc" revision="oreo-mr1-test2" />
   <project path="device/qcom/common" name="device_qcom_common" remote="aosip" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aosip" />
 
@@ -44,7 +44,7 @@
   <project path="hardware/qcom/msm8x84" name="platform_hardware_qcom_msm8x84" remote="wavedashdoc" />
   <project path="hardware/ril" name="platform_hardware_ril" remote="wavedashdoc" />
 
-  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="wavedashdoc" revision="oreo-mr1-test4" />
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="wavedashdoc" revision="oreo-mr1-test5" />
 
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_contacts" remote="wavedashdoc" />
