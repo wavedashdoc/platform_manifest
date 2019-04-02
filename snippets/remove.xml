@@ -149,5 +149,7 @@
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/libavc" />
+  <remove-project path="platform/external/libmpeg2" />
+  <remove-project path="platform/external/tremolo" />
 
 </manifest>
