@@ -152,6 +152,4 @@
   <remove-project name="platform/external/libmpeg2" />
   <remove-project name="platform/external/tremolo" />
 
-  <remove-project name="platform/hardware/qcom/power" />
-
 </manifest>
