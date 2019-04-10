@@ -77,5 +77,5 @@
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="wavedashdoc" />
 
   <project path="vendor/aosip" name="platform_vendor_aosip" remote="wavedashdoc" />
-  <project path="vendor/moto" name="proprietary_vendor_motorola" remote="wavedashdoc" />
+  <project path="vendor/moto" name="proprietary_vendor_motorola" remote="wavedashdoc" revision="aosip-8.1-test" />
 </manifest>
