@@ -153,5 +153,6 @@
   <remove-project name="platform/external/libavc" />
   <remove-project name="platform/external/libmpeg2" />
   <remove-project name="platform/external/tremolo" />
+  <remove-project name="platform/external/v8" />
 
 </manifest>
