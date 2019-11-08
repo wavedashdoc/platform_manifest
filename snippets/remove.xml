@@ -146,6 +146,8 @@
   <remove-project name="platform/system/tools/hidl" />
   <remove-project name="platform/system/libhwbinder" />
   <remove-project name="platform/system/hwservicemanager" />
+  <remove-project name="platform/system/connectivity/wificond" />
+
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/libavc" />
