@@ -18,6 +18,7 @@
   <project path="system/tools/hidl" name="android_system_tools_hidl" remote="los" />
   <project path="system/hwservicemanager" name="android_system_hwservicemanager" remote="los" />
   <project path="system/connectivity/wificond" name="android_system_connectivity_wificond" remote="los" />
+  <project path="system/security" name="android_system_security" remote="los" />
 
   <project path="external/libhevc" name="android_external_libhevc" remote="los" />
   <project path="external/sqlite" name="android_external_sqlite" remote="los" />
