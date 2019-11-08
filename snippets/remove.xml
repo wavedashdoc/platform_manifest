@@ -155,5 +155,6 @@
   <remove-project name="platform/external/libmpeg2" />
   <remove-project name="platform/external/tremolo" />
   <remove-project name="platform/external/v8" />
+  <remove-project name="platform/external/sfntly" />
 
 </manifest>

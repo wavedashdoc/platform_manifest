@@ -26,5 +26,6 @@
   <project path="external/libmpeg2" name="android_external_libmpeg2" remote="los" />
   <project path="external/tremolo" name="android_external_tremolo" remote="los" />
   <project path="external/v8" name="android_external_v8" remote="los" />
+  <project path="external/sfntly" name="android_external_sfntly" remote="los" />
 
 </manifest>
