@@ -55,7 +55,7 @@
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="aosip" />
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="aosip" />
   <project path="packages/apps/MusicFX" name="platform_packages_apps_MusicFX" remote="aosip" />
-  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="aosip" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="wavedashdoc" />
   <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="aosip" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="wavedashdoc" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="wavedashdoc" />
@@ -63,7 +63,7 @@
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="aosip" />
   <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="aosip" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="aosip" />
-  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="aosip" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="wavedashdoc" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="aosip" />
 
   <project path="system/bt" name="platform_system_bt" remote="wavedashdoc" />
