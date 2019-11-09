@@ -29,5 +29,6 @@
   <project path="external/sfntly" name="android_external_sfntly" remote="los" />
   <project path="external/chromium-libpac" name="android_external_chromium-libpac" remote="los" />
   <project path="external/libvpx" name="android_external_libvpx" remote="los" />
+  <project path="external/libcups" name="android_external_libcups" remote="los" />
 
 </manifest>
