@@ -20,7 +20,7 @@
   </project>
 
   <project path="device/aosip/sepolicy" name="device_aosip_sepolicy" remote="aosip" />
-   <project path="device/moto/shamu" name="device_moto_shamu" remote="wavedashdoc" revision="aosip-8.1-stable" />
+   <project path="device/moto/shamu" name="device_moto_shamu" remote="wavedashdoc" revision="aosip-8.1-test2" />
   <project path="device/qcom/common" name="device_qcom_common" remote="aosip" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aosip" />
 
@@ -46,7 +46,7 @@
 
   <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="los" revision="lineage-16.0" />
 
-  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="aosip" />
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="wavedashdoc" />
   <project path="packages/apps/Contacts" name="platform_packages_apps_contacts" remote="wavedashdoc" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="aosip" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="aosip" />
