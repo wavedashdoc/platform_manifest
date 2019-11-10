@@ -30,5 +30,7 @@
   <project path="external/chromium-libpac" name="android_external_chromium-libpac" remote="los" />
   <project path="external/libvpx" name="android_external_libvpx" remote="los" />
   <project path="external/libcups" name="android_external_libcups" remote="los" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="los" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="los" />
 
 </manifest>
