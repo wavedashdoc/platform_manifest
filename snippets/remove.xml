@@ -159,5 +159,7 @@
   <remove-project name="platform/external/chromium-libpac" />
   <remove-project name="platform/external/libvpx" />
   <remove-project name="platform/external/libcups" />
+  <remove-project path="platform/external/libcxx" />
+  <remove-project path="platform/external/libjpeg-turbo" />
 
 </manifest>
