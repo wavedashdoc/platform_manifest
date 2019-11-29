@@ -14,13 +14,18 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+
   <project path="build/soong" name="platform_build_soong" remote="wavedashdoc" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="device/aosip/sepolicy" name="device_aosip_sepolicy" remote="aosip" />
   <project path="device/moto/shamu" name="device_moto_shamu" remote="wavedashdoc" revision="aosip-8.1-stable" />
+
+  <project path="vendor/aosip" name="platform_vendor_aosip" remote="wavedashdoc" />
+  <project path="vendor/moto" name="proprietary_vendor_motorola" remote="wavedashdoc" revision="aosip-8.1-test" />
+
+  <project path="device/aosip/sepolicy" name="device_aosip_sepolicy" remote="aosip" />
   <project path="device/qcom/common" name="device_qcom_common" remote="aosip" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="aosip" />
 
@@ -33,8 +38,6 @@
   
   <project path="hardware/qcom/msm8x84" name="platform_hardware_qcom_msm8x84" remote="wavedashdoc" />
 
-  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="los" revision="lineage-16.0" />
-
   <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="aosip" />
   <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="aosip" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="wavedashdoc" />
@@ -43,6 +46,6 @@
   <project path="packages/apps/MusicFX" name="android_packages_apps_MusicFX" remote="aosip" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="aosip" />
 
-  <project path="vendor/aosip" name="platform_vendor_aosip" remote="wavedashdoc" />
-  <project path="vendor/moto" name="proprietary_vendor_motorola" remote="wavedashdoc" revision="aosip-8.1-test" />
+  <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" remote="aosip" />
+
 </manifest>
