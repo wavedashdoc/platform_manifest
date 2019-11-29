@@ -37,6 +37,11 @@
   </project>
   
   <project path="hardware/qcom/msm8x84" name="platform_hardware_qcom_msm8x84" remote="wavedashdoc" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="aosip" />
+  
+  <project path="frameworks/native" name="platform_frameworks_native" remote="wavedashdoc" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="wavedashdoc" />
+  <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="aosip" />
 
   <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="aosip" />
   <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="aosip" />
@@ -45,7 +50,5 @@
   <project path="packages/apps/Snap" name="platform_packages_apps_Snap" remote="aosip" />
   <project path="packages/apps/MusicFX" name="platform_packages_apps_MusicFX" remote="aosip" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="aosip" />
-
-  <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="aosip" />
 
 </manifest>
