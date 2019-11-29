@@ -42,7 +42,7 @@
   <project path="system/connectivity/wificond" name="android_system_connectivity_wificond" remote="los" />
   <project path="system/security" name="android_system_security" remote="los" />
   <project path="system/bt" name="android_system_bt" remote="los" />
-  <project path="system/nfc" name="android_platform_system_nfc" remote="los" />
+  <project path="system/nfc" name="android_system_nfc" remote="los" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="los" />
   <project path="system/vold" name="android_system_vold" remote="los" />
   <project path="system/extras" name="android_system_extras" remote="los" />
