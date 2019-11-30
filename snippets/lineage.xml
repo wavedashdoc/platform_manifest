@@ -20,7 +20,6 @@
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="los" />
   <project path="packages/apps/Contacts" name="android_packages_apps_contacts" remote="los" />
   <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="los" />
-  <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="los" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="los" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="los" />
 
