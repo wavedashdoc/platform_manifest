@@ -39,6 +39,7 @@
   <project path="hardware/qcom/msm8x84" name="platform_hardware_qcom_msm8x84" remote="wavedashdoc" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="aosip" />
   
+  <project path="frameworks/base" name="platform_frameworks_base" remote="wavedashdoc" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="wavedashdoc" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="wavedashdoc" />
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="aosip" />

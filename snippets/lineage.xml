@@ -60,7 +60,6 @@
   <project path="external/libcxx" name="android_external_libcxx" remote="los" />
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="los" />
 
-  <project path="frameworks/base" name="android_frameworks_base" remote="los" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="los" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="los" />
   <project path="frameworks/support" name="android_frameworks_support" remote="los" />
