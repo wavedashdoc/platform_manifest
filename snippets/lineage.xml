@@ -26,7 +26,6 @@
   <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="los" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="los" />
   <project path="packages/providers/TvProvider" name="android_packages_providers_TvProvider" remote="los" />
-  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="los" />=
 
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="los" />
 
@@ -56,9 +55,5 @@
   <project path="external/libcups" name="android_external_libcups" remote="los" />
   <project path="external/libcxx" name="android_external_libcxx" remote="los" />
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="los" />
-
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="los" />
-  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="los" />
-  <project path="frameworks/support" name="android_frameworks_support" remote="los" />
 
 </manifest>
