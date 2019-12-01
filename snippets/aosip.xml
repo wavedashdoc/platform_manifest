@@ -38,6 +38,7 @@
   
   <project path="hardware/qcom/msm8x84" name="platform_hardware_qcom_msm8x84" remote="wavedashdoc" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="aosip" />
+  <project path="hardware/ril" name="platform_hardware_ril" remote="wavedashdoc" />
   
   <project path="frameworks/base" name="platform_frameworks_base" remote="wavedashdoc" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="wavedashdoc" />
@@ -61,5 +62,6 @@
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="aosip" />
 
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="aosip" />
+  <project path="system/netd" name="platform_system_netd" remote="aosip" />
 
 </manifest>

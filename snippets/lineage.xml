@@ -10,7 +10,6 @@
 
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="los" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="los" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="los" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="los" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="los" />
 
@@ -40,7 +39,6 @@
   <project path="system/vold" name="android_system_vold" remote="los" />
   <project path="system/extras" name="android_system_extras" remote="los" />
   <project path="system/core" name="android_system_core" remote="los" />
-  <project path="system/netd" name="android_system_netd" remote="los" />
   <project path="system/qcom" name="android_system_qcom" remote="los" />
 
   <project path="external/libhevc" name="android_external_libhevc" remote="los" />
