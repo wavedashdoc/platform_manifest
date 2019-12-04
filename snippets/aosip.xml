@@ -43,13 +43,13 @@
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="wavedashdoc" />
 
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" remote="wavedashdoc" />
-  <project path="packages/apps/Contacts" name="android_packages_apps_contacts" remote="wavedashdoc" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_contacts" remote="wavedashdoc" />
   <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" remote="wavedashdoc" />
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer-1" remote="wavedashdoc" />
   <project path="packages/apps/DUI" name="platform_packages_apps_DUI" remote="wavedashdoc" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="wavedashdoc" />
   <project path="packages/apps/Jelly" name="platform_packages_apps_Jelly" remote="wavedashdoc" />
-  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="wavedashdoc" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="wavedashdoc" />
   <project path="packages/apps/OwlsNest" name="platform_packages_apps_OwlsNest" remote="wavedashdoc" />
   <project path="packages/apps/PackageInstaller" name="platform_packages_apps_PackageInstaller" remote="wavedashdoc" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="wavedashdoc" />
