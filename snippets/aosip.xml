@@ -37,7 +37,7 @@
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="wavedashdoc" />
   <project path="hardware/ril" name="platform_hardware_ril" remote="wavedashdoc" />
   
-  <project path="frameworks/base" name="platform_frameworks_base" remote="wavedashdoc" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="wavedashdoc" revision="oreo-mr1-test4" />
   <project path="frameworks/native" name="platform_frameworks_native" remote="wavedashdoc" />
   <project path="frameworks/av" name="platform_frameworks_av" remote="wavedashdoc" />
   <project path="frameworks/compile/mclinker" name="platform_frameworks_compile_mclinker" remote="wavedashdoc" />
