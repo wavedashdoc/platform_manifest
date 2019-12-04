@@ -1,36 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project path="external/skia" name="android_external_skia" remote="los" />
+  <project path="art" name="android_art" remote="los" />
+
+  <project path="external/chromium-libpac" name="android_external_chromium-libpac" remote="los" />
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="los" />
-  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="los" />>
+  <project path="external/libavc" name="android_external_libavc" remote="los" />
+  <project path="external/libcups" name="android_external_libcups" remote="los" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="los" />
+  <project path="external/libhevc" name="android_external_libhevc" remote="los" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="los" />
+  <project path="external/libmpeg2" name="android_external_libmpeg2" remote="los" />
+  <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="los" />
+  <project path="external/libvpx" name="android_external_libvpx" remote="los" />
+  <project path="external/sfntly" name="android_external_sfntly" remote="los" />
+  <project path="external/skia" name="android_external_skia" remote="los" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="los" />
+  <project path="external/tremolo" name="android_external_tremolo" remote="los" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="los" />
+  <project path="external/v8" name="android_external_v8" remote="los" />
+
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="los" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="los" />
+  <project path="frameworks/support" name="android_frameworks_support" remote="los" />
 
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="los" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="los" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="los" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="los" />
+
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" remote="los" revision="lineage-16.0" />
 
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="los" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="los" />
   <project path="packages/apps/ManagedProvisioning" name="android_packages_apps_ManagedProvisioning" remote="los" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="los" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="los" />
 
-  <project path="system/libhidl" name="android_system_libhidl" remote="los" />
-  <project path="system/tools/hidl" name="android_system_tools_hidl" remote="los" />
-  <project path="system/hwservicemanager" name="android_system_hwservicemanager" remote="los" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="los" />
+  <project path="packages/providers/TvProvider" name="android_packages_providers_TvProvider" remote="los" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="los" />=
+
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="los" />
+
+  <project path="system/bt" name="android_system_bt" remote="los" />
   <project path="system/connectivity/wificond" name="android_system_connectivity_wificond" remote="los" />
+  <project path="system/core" name="android_system_core" remote="los" />
+  <project path="system/extras" name="android_system_extras" remote="los" />
+  <project path="system/libhidl" name="android_system_libhidl" remote="los" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="los" />
+  <project path="system/gatekeeper" name="android_system_gatekeeper" remote="los" />
+  <project path="system/hwservicemanager" name="android_system_hwservicemanager" remote="los" />
+  <project path="system/nfc" name="android_system_nfc" remote="los" />
+  <project path="system/qcom" name="android_system_qcom" remote="los" />
   <project path="system/security" name="android_system_security" remote="los" />
-
-  <project path="external/libhevc" name="android_external_libhevc" remote="los" />
-  <project path="external/sqlite" name="android_external_sqlite" remote="los" />
-  <project path="external/libavc" name="android_external_libavc" remote="los" />
-  <project path="external/libmpeg2" name="android_external_libmpeg2" remote="los" />
-  <project path="external/tremolo" name="android_external_tremolo" remote="los" />
-  <project path="external/v8" name="android_external_v8" remote="los" />
-  <project path="external/sfntly" name="android_external_sfntly" remote="los" />
-  <project path="external/chromium-libpac" name="android_external_chromium-libpac" remote="los" />
-  <project path="external/libvpx" name="android_external_libvpx" remote="los" />
-  <project path="external/libcups" name="android_external_libcups" remote="los" />
-  <project path="external/libcxx" name="android_external_libcxx" remote="los" />
-  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="los" />
+  <project path="system/tools/hidl" name="android_system_tools_hidl" remote="los" />
+  <project path="system/vold" name="android_system_vold" remote="los" />
 
 </manifest>
