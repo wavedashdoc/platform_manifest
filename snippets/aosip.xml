@@ -68,7 +68,7 @@
   <project path="system/core" name="platform_system_core" remote="wavedashdoc" />
   <project path="system/extras" name="platform_system_extras" remote="wavedashdoc" />
   <project path="system/netd" name="platform_system_netd" remote="wavedashdoc" />
-  <project path="system/nfc" name="platform_system_nfc" remote="wavedashdoc" />
+  <project path="system/nfc" name="android_platform_system_nfc" remote="wavedashdoc" />
   <project path="system/qcom" name="platform_system_qcom" remote="wavedashdoc" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="wavedashdoc" />
   <project path="system/tools/hidl" name="platform_system_tools_hidl" remote="wavedashdoc" />
