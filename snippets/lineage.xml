@@ -5,6 +5,7 @@
 
   <project path="external/chromium-libpac" name="android_external_chromium-libpac" remote="los" />
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="los" />
+  <project path="external/ImageMagick" name="android_external_ImageMagick" />
   <project path="external/libavc" name="android_external_libavc" remote="los" />
   <project path="external/libcups" name="android_external_libcups" remote="los" />
   <project path="external/libcxx" name="android_external_libcxx" remote="los" />
