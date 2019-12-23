@@ -34,7 +34,7 @@
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="los" />
   <project path="packages/providers/TvProvider" name="android_packages_providers_TvProvider" remote="los" />
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="los" />
-  <project path="packages/services/BuiltInPrintService" remote="los" />
+  <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="los" />
 
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="los" />
 
