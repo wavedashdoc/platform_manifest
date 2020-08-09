@@ -156,7 +156,7 @@
 
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/libexif" />
-  <remove-project name="platform/external/dng/sdk" />
+  <remove-project name="platform/external/dng_sdk" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/libavc" />
