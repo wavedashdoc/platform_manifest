@@ -155,6 +155,7 @@
   <remove-project name="platform/system/security" />
 
   <remove-project name="platform/external/libhevc" />
+  <remove-project name="platform/external/libexif" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/libavc" />
   <remove-project name="platform/external/libmpeg2" />

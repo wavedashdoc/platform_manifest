@@ -10,6 +10,7 @@
   <project path="external/libcups" name="android_external_libcups" remote="los" />
   <project path="external/libcxx" name="android_external_libcxx" remote="los" />
   <project path="external/libhevc" name="android_external_libhevc" remote="los" />
+  <project path="external/libexif" name="android_external_libexif" remote="los" />
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="los" />
   <project path="external/libmpeg2" name="android_external_libmpeg2" remote="los" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="los" />
