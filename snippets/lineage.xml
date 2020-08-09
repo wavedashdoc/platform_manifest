@@ -4,6 +4,7 @@
   <project path="art" name="android_art" remote="los" />
 
   <project path="external/chromium-libpac" name="android_external_chromium-libpac" remote="los" />
+  <project path="external/dng_sdk" name="android_external_dng_sdk" remote="los" />
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="los" />
   <project path="external/ImageMagick" name="android_external_ImageMagick" remote="los" />
   <project path="external/libavc" name="android_external_libavc" remote="los" />
