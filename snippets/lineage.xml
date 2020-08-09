@@ -16,6 +16,7 @@
   <project path="external/libmpeg2" name="android_external_libmpeg2" remote="los" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="los" />
   <project path="external/libvpx" name="android_external_libvpx" remote="los" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="los" />
   <project path="external/sfntly" name="android_external_sfntly" remote="los" />
   <project path="external/skia" name="android_external_skia" remote="los" />
   <project path="external/sqlite" name="android_external_sqlite" remote="los" />
